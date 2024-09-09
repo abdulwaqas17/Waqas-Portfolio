@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* root classes */
+:root{
+
+    --light:aqua;
+}
+
+/* utility classes */
+.portfolio{
+
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
+    background-size: cover;
+
+}
+
+span{
+
+    color: var(--light);
+}
+
+h1,h2{
+
+    color: white;
+
+}
+
+p{
+
+    color: gainsboro;
+
+}
+
+.flex{
+
+    display: flex;
+
+}
+
+
+.icons i{
+
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    background: transparent;
+
+}
+
+.icons i:hover{
+
+    cursor: pointer;
+    color: var(--light);
+    box-shadow: 0px 0px 10px 5px var(--light);
+
+}
+
+.container{
+
+    padding-inline: 80px;
+    width: 100%;
+}
+
+
+
+
+
+/* styling for header start */
+header{
+
+    width: 100%;
+    /* height: 90px; */
+    padding-block:30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h2 span{
+
+    font-size: 2.2rem;
+}
+
+
+/* styling for headerIcons start */
+.headerIcons{
+
+    gap: 25px;
+    font-size: 1.3rem;
+}
+
+
+
+
+/* styling for main start */
+main{
+
+    width: 50%;
+    padding-top: 130px;
+
+}
+
+main>h1{
+
+    font-size: 3rem;
+    line-height: 4rem;
+
+}
+
+main>p{
+
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding-block: 30px 40px;
+
+}
+
+.mainButton {
+
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    color: white;
+    /* font-weight: bold; */
+    transition: 0.3s;
+
+}
+
+.mainButton:hover{
+
+    border-color: var(--light);
+    color: var(--light);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px var(--light);
+}
+
+/* styling for sidebar start */
+.sidebar{
+
+    position: fixed;
+    right: 40px;
+    top: 150px;
+    width: 70px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border-radius: 40px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-block: 40px;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+}
+
+.sidebar:hover{
+
+    box-shadow: 0px 0px 10px 5px var(--light);
+
+}
+

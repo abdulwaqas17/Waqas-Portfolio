@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+
+/* root classes */
+:root{
+
+    --light:aqua;
+}
+
+/* utility classes */
+.portfolio{
+
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
+    background-size: cover;
+
+}
+
+span{
+
+    color: var(--light);
+}
+
+h1,h2{
+
+    color: white;
+
+}
+
+p{
+
+    color: gainsboro;
+
+}
+
+.flex{
+
+    display: flex;
+
+}
+
+
+.icons i{
+
+    transition: 0.3s;
+    color: rgb(255, 255, 255);
+    background: transparent;
+
+}
+
+.icons i:hover{
+
+    cursor: pointer;
+    color: var(--light);
+    box-shadow: 0px 0px 10px 5px var(--light);
+
+}
+
+
+/* styling for contact is here */
+.contact{
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+}
+
+.contact h1{
+
+    text-align: center;
+    font-size: 2.4rem;
+
+}
+
+
+/* styling for header start */
+header{
+
+    width: 100%;
+    /* height: 90px; */
+    padding-block:30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h2 span{
+
+    font-size: 2.2rem;
+}
+
+
+/* styling for headerIcons start */
+.headerIcons{
+
+    gap: 25px;
+    font-size: 1.3rem;
+}
+
+
+/* styling for mainBoxes is here */
+.mainBoxes{
+
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+/* styling for contactBox is here */
+.contactBox div{
+
+    margin-block: 10px;
+}
+
+.circleIcon{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.circleIcon i{
+
+    color: black;
+
+}
+
+/* styling for formBox start */
+.formBox{
+
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    padding: 20px;
+    flex-basis: 40%;
+    transition: 0.3s;
+
+}
+
+.formBox:hover{
+
+    box-shadow: 0px 0px 10px 5px var(--light);
+}
+
+/* styling for inputBox start */
+.inputBox {
+
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    /* padding: 15px; */
+    border-radius: 5px;
+    margin-block: 10px;
+}
+
+.inputBox input{
+
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    color: var(--light);
+    font-size: 1.2rem;
+    /* font-style: italic; */
+}
+
+
+::placeholder{
+
+    color: var(--light);
+    font-size: 1.4rem;
+}
+
+
+.inputBox:nth-child(1),.inputBox:nth-child(2){
+
+    width: calc(50% - 10px);
+    display: inline-block;
+    /* margin-inline: 5px; */
+
+}
+
+.inputBox:nth-child(1){
+
+    margin-right: 5px;
+
+}
+
+.inputBox:nth-child(2){
+
+    margin-left: 5px;
+
+}
+
+.inputBox:nth-child(4){
+
+    height: 100px;
+
+}
