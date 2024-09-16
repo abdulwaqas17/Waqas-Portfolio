@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 
 }
 
@@ -14,13 +15,6 @@
 }
 
 /* utility classes */
-.portfolio{
-
-    height: 100vh;
-    background-image: url(https://img.freepik.com/free-vector/blue-futuristic-waves-background-with-computer-code-technology_53876-119584.jpg);
-    background-size: cover;
-
-}
 
 span{
 
@@ -58,7 +52,7 @@ p{
 
     cursor: pointer;
     color: var(--light);
-    /* box-shadow: 0px 0px 10px 1px var(--light); */
+    /* box-shadow: 0px 0px 10px 5px var(--light); */
 
 }
 
@@ -68,6 +62,15 @@ p{
     width: 100%;
 }
 
+
+
+/* styling for about start */
+.about{
+
+    background-color: rgb(2, 4, 29);
+    height: 100vh;
+    
+}
 
 
 
@@ -97,51 +100,129 @@ header h2 span{
 }
 
 
+/* styling for about-content start */
+.about-content{
 
+    justify-content: space-between;
+    margin-top: 50px;
+}
 
-/* styling for main start */
-main{
+/* styling for left-about  start */
+.left-about{
 
-    width: 50%;
-    padding-top: 130px;
+    flex-basis: 50%;
 
 }
 
-main>h1{
+.left-about>h1{
 
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 2.9rem;
+    line-height: 3.3rem;
 
 }
 
-main>p{
+.left-about>h1>span{
 
-    font-size: 1rem;
+    color: var(--light);
+
+}
+.left-about>p{
+
     line-height: 1.6rem;
     padding-block: 30px 40px;
 
 }
 
-.mainButton {
 
-    padding: 10px 20px;
-    background: transparent;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 25px;
-    font-size: 1.2rem;
-    color: white;
-    /* font-weight: bold; */
-    transition: 0.3s;
 
+
+
+
+
+/* styling for right-about  start */
+.right-about{
+
+    flex-basis:47%;
 }
 
-.mainButton:hover{
+.right-headings{
 
-    border-color: var(--light);
-    color: var(--light);
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.right-headings h3{
+
     cursor: pointer;
-    box-shadow: 0px 0px 10px 5px var(--light);
+    font-weight: lighter;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 5px;
+    
 }
+
+.right-headings h3::before{
+
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--light);
+    transition: 0.3s ease;
+
+}
+
+.right-headings h3:hover::before{
+
+    width: 100%;
+
+}
+
+#content p{
+
+    width: 500px;
+    line-height: 1.8rem;
+
+}
+
+/*styling for contactBox is here */
+.contactBox div{
+
+    margin-block: 10px;
+}
+
+.circleIcon{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light);
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.circleIcon i{
+
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+.circleIcon:hover.circleIcon i{
+
+    font-size: 1.4rem;
+    
+}
+ 
+
+
+
+
 
 /* styling for sidebar start */
 .sidebar{
@@ -170,4 +251,3 @@ main>p{
     box-shadow: 0px 0px 10px 5px var(--light);
 
 }
-

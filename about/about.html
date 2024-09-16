@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <div class="about">
+
+        <div class="container">
+
+            <!-- header is here -->
+            <header class="flex">
+
+                <div class="headerLogo">
+                    <h2><span>M</span>uhammad <span>W</span>aqas<span>.</span></h2>
+                </div>
+
+                <div class="headerIcons icons flex">
+
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+
+                </div>
+
+            </header>
+
+
+            <!-- about-content is here-->
+            <div class="about-content flex">
+
+
+
+                <!-- left about is here -->
+                <div class="left-about">
+
+                    <h1>A Precise <span>Introduction</span> About Me</h1>
+
+                    <p>
+                        I am a student of Intermediate. Learning Web and App Development from Saylani Mass IT Training,
+                        acquiring expertise in web development technologies and principles, with a Focus on Ideas and AI
+                        technology.
+                    </p>
+
+                    <!-- contact box is here -->
+                    <div class="contactBox">
+
+
+                        <!-- location is here -->
+                        <div class="location flex">
+
+                            <div class="circleIcon flex"> <i class="fa-solid fa-location-dot"></i> </div>
+
+                            <div class="locationContent">
+
+                                <h3>Location</h3>
+                                <p>Karachi, Pakistan</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- email is here -->
+                        <div class="email flex">
+
+                            <div class="circleIcon flex"> <i class="fa-regular fa-paper-plane"></i> </div>
+
+                            <div class="email">
+
+                                <h3>Email</h3>
+                                <p>waqas123@gmail.com</p>
+
+                            </div>
+
+                        </div>
+
+                        <!-- call is here -->
+                        <div class="call flex">
+
+                            <div class="circleIcon flex"> <i class="fa-solid fa-phone"></i> </div>
+
+                            <div class="callContent">
+
+                                <h3>Call</h3>
+                                <p>+923123456789</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- right about is here-->
+                <div class="right-about">
+
+                    <!-- right-headings is here-->
+                    <div class="right-headings flex">
+
+                        <h3 onclick="skills()">Skills</h3>
+                        <h3 onclick="experience()">Experience</h3>
+                        <h3 onclick="education()">Education</h3>
+
+                    </div>
+
+                    <div id="content">
+                        <p>
+
+                            <b>Front-End Development :</b> HTML  CSS  Bootstap  JavaScript(continue)
+                        </p>
+
+                        <p>
+                            <b>Hosting Platform :</b> GitHub Netlify
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- sidebar is here -->
+        <div class="sidebar icons flex">
+
+            <abbr title="Home"><i class="fa-solid fa-house"></i></abbr>
+            <abbr title="About"><i class="fa-solid fa-user"></i></abbr>
+            <abbr title="Services"><i class="fa-solid fa-list-check"></i></abbr>
+            <abbr title="Projects"> <i class="fa-solid fa-pen-to-square"></i></abbr>
+            <abbr title="Contact"><i class="fa-solid fa-envelope"></i></abbr>
+
+        </div>
+    </div>
+
+    
+   
+
+
+    <script>
+
+        function skills() {
+
+            document.getElementById('content').innerHTML = `
+
+            <p><b>Front-End Development :</b> HTML CSS Bootstap</p>
+
+            <p><b>Hosting Platform :</b> GitHub Netlify</p>
+    
+            `;
+        }
+
+        function experience(){
+
+            document.getElementById('content').innerHTML = `
+            
+            <p>
+               Fresh Front-End Developer, I made some websites as a assignment, which are listed in Projects Section.
+            </p>
+
+            `;
+        }
+
+        function education(){
+
+            document.getElementById('content').innerHTML = `
+            
+            <p>
+               Intermediate (continue)
+            </p>
+            <p>
+               Matriculation  2023
+            </p>
+            `;
+        }
+    </script>
+
+</body>
+
+</html>

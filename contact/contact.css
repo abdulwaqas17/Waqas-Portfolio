@@ -59,9 +59,17 @@ p{
 
     cursor: pointer;
     color: var(--light);
-    box-shadow: 0px 0px 10px 5px var(--light);
+    /* box-shadow: 0px 0px 10px 5px var(--light); */
 
 }
+
+.container{
+
+    padding-inline: 80px;
+    width: 100%;
+}
+
+
 
 
 /* styling for contact is here */
@@ -69,7 +77,7 @@ p{
 
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: rgb(8, 5, 29);
 
 }
 
@@ -79,6 +87,7 @@ p{
     font-size: 2.4rem;
 
 }
+
 
 
 /* styling for header start */
@@ -106,17 +115,22 @@ header h2 span{
 }
 
 
+
+
 /* styling for mainBoxes is here */
-.mainBoxes{
+/* .mainBoxes{
 
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
+    flex-direction: row-reverse;
 
-}
+} */
+
+
 
 /* styling for contactBox is here */
-.contactBox div{
+/* .contactBox div{
 
     margin-block: 10px;
 }
@@ -137,58 +151,73 @@ header h2 span{
 
     color: black;
 
-}
+} */
+
+
+
+
 
 /* styling for formBox start */
 .formBox{
 
-    border: 1px solid rgba(255, 255, 255, 0.377);
+    /* border: 1px solid rgba(255, 255, 255, 0.377); */
     padding: 20px;
-    flex-basis: 40%;
+    margin:50px auto ;
+    width: 70%;
     transition: 0.3s;
 
 }
-
+/* 
 .formBox:hover{
 
     box-shadow: 0px 0px 10px 5px var(--light);
-}
+} */
+
+
+
+
 
 /* styling for inputBox start */
 .inputBox {
 
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.226);
-    /* padding: 15px; */
-    border-radius: 5px;
-    margin-block: 10px;
+    margin-block: 15px;
+
 }
 
 .inputBox input{
 
     background: none;
-    border: none;
     width: 100%;
     height: 100%;
     padding: 15px;
     color: var(--light);
-    font-size: 1.2rem;
-    /* font-style: italic; */
+    font-size: 1rem;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+}
+
+input:focus {
+
+    border-color: aqua !important;
+
+    
 }
 
 
 ::placeholder{
 
-    color: var(--light);
-    font-size: 1.4rem;
+    color: rgba(0, 255, 255, 0.753);
+    font-size: 1.2rem;
 }
+/* 
 
+.inputBox:nth-child(1),.inputBox:nth-child(2){ 
 
-.inputBox:nth-child(1),.inputBox:nth-child(2){
-
-    width: calc(50% - 10px);
-    display: inline-block;
-    /* margin-inline: 5px; */
+     width: calc(50% - 15px); 
+     display: inline-block;
+     margin-inline: 5px; 
 
 }
 
@@ -202,10 +231,48 @@ header h2 span{
 
     margin-left: 5px;
 
-}
+}  */
 
 .inputBox:nth-child(4){
 
     height: 100px;
+
+}
+
+.inputBox:nth-child(5){
+
+    width: 20%;
+    
+
+}
+
+
+
+
+/* styling for sidebar start */
+.sidebar{
+
+    position: fixed;
+    right: -80px;
+    top: 130px;
+    width: 160px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 5px 0px var(--light);
+    border-radius: 100px;
+    flex-direction: column;
+    gap: 50px;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-left: 35px;
+    padding-block: 70px;
+    backdrop-filter: blur(30px);
+    transition: 0.5s;
+}
+
+.sidebar:hover{
+
+    box-shadow: 0px 0px 10px 5px var(--light);
 
 }
